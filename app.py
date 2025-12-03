@@ -56,7 +56,7 @@ st.title("Datos de vivienda en la CDMX")
 # Cargar datos
 @st.cache_data
 def load_data():
-    df = pd.read_csv('/content/housing_data_CDMX.csv', encoding='latin-1')
+    df = pd.read_csv('housing_data_CDMX.csv', encoding='latin-1')
     return df
 
 df = load_data()
@@ -229,3 +229,4 @@ with tab4:
     fig4.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 
     st.plotly_chart(fig4, use_container_width=True)
+
