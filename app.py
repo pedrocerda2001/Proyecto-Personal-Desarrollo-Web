@@ -1,4 +1,3 @@
-%%writefile app.py
 import pandas as pd
 import seaborn as sns
 import streamlit as st
@@ -228,4 +227,5 @@ with tab4:
     )
     fig4.update_layout(mapbox_style="open-street-map")
     fig4.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+
     st.plotly_chart(fig4, use_container_width=True)
